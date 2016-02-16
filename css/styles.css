@@ -2,6 +2,10 @@
     margin-bottom: 0;
 }
 
+.navbar-inverse{
+    background-color: #1b1b1b;
+}
+
 .navbar .container-fluid{
     width: 65%;
     padding-top: 1em;
@@ -35,11 +39,21 @@ html, body{
     text-align: center;
 }
 
+.headerwork{
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 7.5%;
+}
+
+.work-img{
+    
+}
+
 /* Typography */
 
 .navbar-inverse .navbar-nav>li>a {
     color: #f2f2f2;
-    font-family: 'adamcg', Arial, sans-serif;
+    font-family: 'adamcg', sans-serif;
 }
 
 @font-face {
@@ -54,6 +68,14 @@ html, body{
     font-style: normal;
 }
 
+h2{
+    font-family: 'adamcg', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+    letter-spacing: 0.1em;
+}
+
+/* Media Queries */
 
 @media only screen and (min-width: 1025px) and (max-width: 1445px) and (-webkit-min-device-pixel-ratio: 1) {
     .navbar .container-fluid{
@@ -108,6 +130,10 @@ html, body{
     }
     .navbar-nav>li>a {
         padding-left: 0;
+    }
+
+    .headerwork{
+        margin-top: 20%;
     }
 
 }
