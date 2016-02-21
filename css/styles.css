@@ -18,6 +18,7 @@
 
 html, body{
     height: 100%;
+    background-color: #e6e6e6;
 }
 
 #banner{
@@ -39,14 +40,21 @@ html, body{
     text-align: center;
 }
 
-.headerwork{
-    margin-top: 10%;
+.headers{
     text-align: center;
     margin-bottom: 7.5%;
 }
 
-.work-img{
-    
+.headerwork{
+    margin-top: 15%;
+}
+
+.workrows{
+    margin-bottom: 4%;
+}
+
+.headerabout{
+    margin-top: 11%;
 }
 
 /* Typography */
@@ -133,8 +141,12 @@ h2{
     }
 
     .headerwork{
-        margin-top: 20%;
+        margin-top: 25%;
     }
+
+    .headerabout{
+    margin-top: 21%;
+}
 
 }
 

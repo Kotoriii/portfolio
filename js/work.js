@@ -14,43 +14,33 @@ var works = [
 },
 {
 	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
+	pic: "http://placehold.it/300x300",
 	link: "#"
 },
 {
 	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
+	pic: "http://placehold.it/300x300",
 	link: "#"
 },
 {
 	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
+	pic: "http://placehold.it/300x300",
 	link: "#"
 },
 {
 	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
+	pic: "http://placehold.it/300x300",
 	link: "#"
 },
 {
 	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
-	link: "#"
-},
-{
-	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
-	link: "#"
-},
-{
-	title: "Placeholder",
-	pic: "http://placehold.it/300x311",
+	pic: "http://placehold.it/300x300",
 	link: "#"
 }
 ];
 
 for (var i = 0; i < works.length; i++){
-	$("#work").append("\n<div class='col-xs-12 col-md-4'>\n" +
+	$("#work").append("\n<div class='col-xs-12 col-md-4 workrows'>\n" +
 		"<a href='" + works[i].link +"' class='work-img'>\n" +
 		"<img class='img-responsive center-block' src='" + works[i].pic + "'>\n" +
 		"</a></div>\n" +
