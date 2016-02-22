@@ -48,10 +48,15 @@ for (var i = 0; i < works.length; i++){
 
 }
 
-var cols = $('.workrows');
 var size;
+
+$(window).resize(function(){
 if ($(window).width() <= 768) {size = 2;}
 else { size = 3;}
-	for(var i = 0, l = cols.length; i < l; i += size) {
-    cols.slice(i, i+size).wrapAll('<div class="row"></div>');
+});	
+
+var cols = $('.workrows');
+	for(var i = 0, l = cols.length; i < l; i += $size) {
+    cols.slice(i, i+$size).wrapAll('<div class="row"></div>');
 }
+
