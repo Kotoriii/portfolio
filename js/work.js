@@ -40,7 +40,7 @@ var works = [
 ];
 
 for (var i = 0; i < works.length; i++){
-	$("#work").append("\n<div class='col-xs-12 col-md-4 workrows'>\n" +
+	$("#work").append("\n<div class='col-xs-6 col-md-4 workrows'>\n" +
 		"<a href='" + works[i].link +"' class='work-img'>\n" +
 		"<img class='img-responsive center-block' src='" + works[i].pic + "'>\n" +
 		"</a></div>\n" +
@@ -48,7 +48,10 @@ for (var i = 0; i < works.length; i++){
 
 }
 
-var $cols = $('.workrows');
-for(var i = 0, l = $cols.length; i < l; i += 3) {
-    $cols.slice(i, i+3).wrapAll('<div class="row"></div>');
+var cols = $('.workrows');
+var size;
+if ($(window).width() <= 768) {size = 2;}
+else { size = 3;}
+	for(var i = 0, l = cols.length; i < l; i += size) {
+    cols.slice(i, i+size).wrapAll('<div class="row"></div>');
 }
