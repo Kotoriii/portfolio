@@ -56,7 +56,7 @@ else { size = 3;}
 });	
 
 var cols = $('.workrows');
-	for(var i = 0, l = cols.length; i < l; i += $size) {
-    cols.slice(i, i+$size).wrapAll('<div class="row"></div>');
+	for(var i = 0, l = cols.length; i < l; i += size) {
+    cols.slice(i, i+size).wrapAll('<div class="row"></div>');
 }
 
