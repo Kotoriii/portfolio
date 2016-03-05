@@ -47,7 +47,7 @@ html, body{
     text-align: center;
 }
 
-.headerwork{
+.headerworkcontact{
     margin-top: 100px;
     margin-bottom: 75px;
 }
@@ -59,6 +59,32 @@ html, body{
 .headerabout{
     margin-top: 50px;
     margin-bottom: 75px;
+}
+
+.skillstext{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    min-width: 325px;
+}
+
+.firstskillp{
+    margin-bottom: 50px;
+}
+
+.cvbtn{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.cvbtndsgn{
+    color: #f2f2f2;
+    font-family: 'adamcg', sans-serif;
+    background-color: #1b1b1b;
+    padding: 15px 15px;
 }
 
 /* Typography */
@@ -80,11 +106,21 @@ html, body{
     font-style: normal;
 }
 
+h1{
+    color: white;
+}
+
 h2{
     font-family: 'adamcg', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.75em;
     color: #333;
     letter-spacing: 0.1em;
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5em;
+    line-height: 32px;
 }
 
 /* Media Queries */
@@ -153,13 +189,17 @@ h2{
     }
 
     #banner{
-        background-image: url("../img/mobilebanner.png");
+        background-image: url("../img/mobilebanner.jpg");
         background-attachment: scroll;
     }
 
     .workrows{
         width: calc(100% / 2);
         margin-bottom: 25px;
+    }
+
+    .headerabout{
+    margin-top: 75px;
     }
 
 

@@ -9,7 +9,7 @@ var works = [
 "http://placehold.it/300x311' alt='Placeholder'"*/
 {
 	title: "Mack Arquitectos",
-	pic: "img/macklogo.png",
+	pic: "img/macklogo.jpg",
 	link: "http://www.guillermomack.com"
 },
 {
