@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <!--[if lte IE 9]>
+      <link href='css/animations-ie-fix.css' rel='stylesheet'>
+  <![endif]-->
 
   <!-- Custom styles for this template go here -->
   <link rel="stylesheet" href="css/styles.css">
@@ -69,7 +73,9 @@
           <button type="button" class="btn cvbtndsgn">Download my CV</button>
           </div>
           <p>I have a wide set of skills that include basic design, front-end development (HTML5, CSS3, Javascript, Responsiveness), frameworks (Bootstrap, JQuery) and back-end development (Ruby on Rails, C#). I also speak English, Spanish and German fluently.</p>
-          <img class="img-circle img2" src="img/img2.png">
+          <div class='animatedParent'>
+          <img class="img-circle img2 animated growIn" src="img/img2.png">
+          </div>
          </div>
       </section>
 
@@ -98,7 +104,9 @@
 
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script src="js/work.js"></script>   
+      <script src="js/animate.js"></script>
+      <script src="js/work.js"></script>
+      <script src="js/javascript.js"></script>      
     </body>
     
     
