@@ -4,6 +4,7 @@
 
 .navbar-inverse{
     background-color: #1b1b1b;
+    border: none;
 }
 
 .navbar .container-fluid{
@@ -24,6 +25,7 @@ html, body{
 #banner{
     width: 100%;
     height: 100%;
+    min-height: 650px;
     background-image: url("../img/banner.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,8 +40,9 @@ html, body{
 }
 
 .bannercaption{
+    position: relative;
+    margin-top: 80px;
     top: 40%;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -66,7 +69,7 @@ html, body{
     margin: 0 auto;
     width: 100%;
     max-width: 650px;
-    min-width: 325px;
+    min-width: 290px;
 }
 
 .cvbtn{
@@ -82,6 +85,11 @@ html, body{
     font-family: 'adamcg', sans-serif;
     background-color: #1b1b1b;
     padding: 15px 15px;
+    transition: all .4s ease 0s;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #e60000;
 }
 
 .img-circle{
@@ -96,17 +104,63 @@ html, body{
 /* Footer */
 
 footer{
-    height: 125px;
+    height: 140px;
     background-color: #1b1b1b;
     margin-top: 100px;
+    padding: 20px;
 }
 
+#socialfooter{
+    padding-left: 0;
+    display: block;
+    text-align: center;
+}
+
+#socialfooter li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#socialfooter a {
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+}
+
+#socialfooter a i{
+    color: #f2f2f2;
+    padding-top: 9px;
+    font-size: 32px;
+}
 
 /* Typography */
 
 .navbar-inverse .navbar-nav>li>a {
     color: #f2f2f2;
     font-family: 'adamcg', sans-serif;
+    transition: all .4s ease 0s;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{
+    color: #e60000;
+}
+
+.navbar-inverse .navbar-brand {
+    font-family: 'adamcg', sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 20px;
+    font-weight: 200;
+    color: #f2f2f2;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #f2f2f2;
+}
+
+#mack{
+    color: #e60000;
 }
 
 @font-face {
@@ -136,6 +190,12 @@ p{
     font-family: 'Oxygen', sans-serif;
     font-size: 1.5em;
     line-height: 32px;
+}
+
+footer p{
+    color: #f2f2f2;
+    font-size: 1.1em;
+    text-align: center;
 }
 
 /* Media Queries */
@@ -189,7 +249,7 @@ p{
         margin: 0;
     }
     .navbar-collapse.in{
-        background-color: red;
+        background-color: #e60000;
     }
     .navbar-collapse{
         padding-right: 0;
