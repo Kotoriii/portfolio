@@ -61,7 +61,7 @@ html, body{
     margin-bottom: 75px;
 }
 
-.skillstext{
+.bodytext{
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -69,14 +69,11 @@ html, body{
     min-width: 325px;
 }
 
-.firstskillp{
-    margin-bottom: 50px;
-}
-
 .cvbtn{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     margin-top: 50px;
 }
 
@@ -86,6 +83,24 @@ html, body{
     background-color: #1b1b1b;
     padding: 15px 15px;
 }
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.img2{
+    margin-top: 100px;
+}
+
+
+/* Footer */
+
+footer{
+    height: 125px;
+    background-color: #1b1b1b;
+    margin-top: 100px;
+}
+
 
 /* Typography */
 
