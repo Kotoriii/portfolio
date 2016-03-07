@@ -29,7 +29,7 @@ for (var i = 0; i < works.length; i++){
 var size;
 
 function checkwidth(){
-if ($(window).width() <= 768) {size = 2;}
+if ($(window).width() <= 760) {size = 2;}
 else {size = 3;}
 }
 
