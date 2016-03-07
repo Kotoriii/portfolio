@@ -2,27 +2,32 @@
 
 var works = [
 {
-	title: "Mack Arquitectos",
 	pic: "img/macklogo.jpg",
-	link: "http://www.guillermomack.com"
+	link: "http://www.guillermomack.com",
+	title: "Guillermo Mack",
+	text: "Architect portfolio. Non-responsive design, CSS-Zoom, Owl-Carousel, Lightbox, PHP Contact form"
 },
 {
-	title: "Placeholder",
-	pic: "http://placehold.it/300x300",
-	link: "#"
+	pic: "img/picommerce.jpg",
+	title: "E-Commerce Template",
+	text: "Bootstrap, ASP/C#, Content Management System, Online Shop, MSSQL",
+	link: "http://picommerce.gear.host"
 },
 {
-	title: "Placeholder",
-	pic: "http://placehold.it/300x300",
-	link: "#"
+	pic: "img/bikeberlin.jpg",
+	title: "Ruby on Rails Web App",
+	text: "Bootstrap, Ruby on Rails, Devise mailing, CanCanCan user management, Heroku",
+	link: "http://testbikeberlin.herokuapp.com"
 }
 ];
 
 for (var i = 0; i < works.length; i++){
 	$("#work").append("\n<div class='col-xs-6 col-md-4 workrows'>\n" +
-		"<a href='" + works[i].link +"' class='work-img'>\n" +
-		"<img class='img-responsive center-block' src='" + works[i].pic + "'>\n" +
-		"</a></div>\n" +
+		"<a href='" + works[i].link +"'>\n" +
+		"<img class='img-responsive center-block work-img' src='" + works[i].pic + "'>\n" +
+		"<div class='hoverwork'><div class='title overtext'>" + works[i].title + "</div>\n" +
+		"<div class='tagline overtext'>" + works[i].text + "</div>\n" +
+		"</div></a></div>\n" +
 		"");
 }
 
