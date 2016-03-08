@@ -42,9 +42,13 @@ html, body{
 
 .bannercaption{
     position: relative;
-    margin-top: 80px;
-    top: 40%;
+    margin-top: 20%;
     text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .headers{
@@ -175,7 +179,7 @@ html, body{
     transition: all .4s ease 0s;
 }
 
-.btn.focus, .btn:focus, .btn:hover {
+.btn:hover, .btn:focus{
     color: #e60000;
 }
 
@@ -183,10 +187,17 @@ html, body{
     border-radius: 50%;
 }
 
+.img1{
+    margin-top: 40px;
+}
+
 .img2{
     margin-top: 100px;
 }
 
+.lower a{
+    color: #e60000;
+}
 
 /* Footer */
 
@@ -280,10 +291,6 @@ footer{
     font-style: normal;
 }
 
-h1{
-    color: white;
-}
-
 h2{
     font-family: 'adamcg', sans-serif;
     font-size: 2.75em;
@@ -295,6 +302,13 @@ p{
     font-family: 'Oxygen', sans-serif;
     font-size: 1.5em;
     line-height: 38px;
+}
+
+.bannercaption p{
+    color: #f2f2f2;
+    font-size: 2.5em;
+    letter-spacing: 0.15em;
+    line-height: 1.75em;
 }
 
 footer p{
@@ -315,6 +329,9 @@ footer p{
         margin-left: 1em;
     }
 
+    .bannercaption{
+        margin-top: 275px;
+    }
 
 }
 
@@ -326,6 +343,10 @@ footer p{
 
     #banner{
         background-attachment: scroll;
+    }
+
+    .bannercaption{
+        margin-top: 300px;
     }
 
     .workrows{
@@ -384,6 +405,17 @@ footer p{
     #banner{
         background-image: url("../img/mobilebanner.jpg");
         background-attachment: scroll;
+    }
+
+    .bannercaption{
+        margin-top: 125px;
+    }
+
+    .bannercaption p{
+    color: #f2f2f2;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+    line-height: 1.75em;
     }
 
     .workrows{
