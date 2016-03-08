@@ -36,7 +36,7 @@ html, body{
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    margin-top: -80px;
+    margin-top: -78px;
     z-index: 2;
 }
 
@@ -64,6 +64,15 @@ html, body{
     margin-bottom: 50px;
     position: relative;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visible-xs, .visible-sm{
+    margin-top: 25px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* Hover over projects, props to http://www.cssscript.com/pure-css3-animated-text-overlay-on-hover/ */
@@ -220,10 +229,6 @@ footer{
 }
 
 #socialfooter a {
-    border: 2px solid #f2f2f2;
-    border-radius: 50%;
-    width: 52px;
-    height: 52px;
     display: inline-block;
 }
 
@@ -231,6 +236,10 @@ footer{
     color: #f2f2f2;
     padding-top: 9px;
     font-size: 32px;
+    border: 2px solid #f2f2f2;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
     -webkit-transition: all .4s ease 0s;
     -moz-transition: all .4s ease 0s;
     -o-transition: all .4s ease 0s;
@@ -238,8 +247,9 @@ footer{
     transition: all .4s ease 0s;
 }
 
-#socialfooter a i:hover{
-    color: #e60000;
+#socialfooter a i:hover {
+    border-color: #e60000;
+    color: #e60000;;
 }    
 
 /* Typography */
@@ -311,6 +321,17 @@ p{
     line-height: 1.75em;
 }
 
+.projtitle{
+    font-family: 'adamcg', sans-serif;
+    font-size: 1.3em;
+    color: #e60000;
+}
+
+.projtext{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;
+}
+
 footer p{
     color: #f2f2f2;
     font-size: 1.1em;
@@ -361,9 +382,9 @@ footer p{
 
 @media only screen and (max-width: 767px){
     .navbar .container-fluid{
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .navbar{
         border: none;
@@ -383,7 +404,6 @@ footer p{
         margin: 0;
     }
     .navbar-collapse.in{
-        background-color: #e60000;
     }
     .navbar-collapse{
         padding-right: 0;
@@ -412,24 +432,30 @@ footer p{
     }
 
     .bannercaption p{
-    color: #f2f2f2;
-    font-size: 2em;
-    letter-spacing: 0.15em;
-    line-height: 1.75em;
+        color: #f2f2f2;
+        font-size: 2em;
+        letter-spacing: 0.15em;
+        line-height: 1.75em;
     }
 
     .workrows{
         width: calc(100% / 2);
         margin-bottom: 25px;
+        float: none;
     }
 
     .workrows:hover .hoverwork { opacity: 0; }
 
     .headerabout{
-    margin-top: 75px;
+        margin-top: 75px;
     }
 
+}
 
+@media only screen and (max-width: 345px){
+.workrows{
+        width: calc(100% / 1.5);
+    }
 }
 
 /* Credit to CSS-Tricks */

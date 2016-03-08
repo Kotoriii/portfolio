@@ -27,14 +27,17 @@ for (var i = 0; i < works.length; i++){
 		"<img class='img-responsive center-block work-img' src='" + works[i].pic + "'>\n" +
 		"<div class='hoverwork'><div class='title overtext'>" + works[i].title + "</div>\n" +
 		"<div class='tagline overtext'>" + works[i].text + "</div>\n" +
-		"</div></a></div>\n" +
+		"</div>" +
+		"</a><div class='visible-xs visible-sm'>\n" +
+		"<div class='projtitle'><span>" + works[i].title + "</span></div><br>" + "<span class='projtext'>" + works[i].text + "</span></div>\n" + 
+		"</div>\n" +
 		"");
 }
 
 var size;
 
 function checkwidth(){
-if ($(window).width() <= 760) {size = 2;}
+if ($(window).width() <= 760) {size = 1;}
 else {size = 3;}
 }
 
