@@ -61,7 +61,7 @@ html, body{
 }
 
 .workrows{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     position: relative;
     overflow: hidden;
     margin-left: auto;
@@ -70,6 +70,7 @@ html, body{
 
 .visible-xs, .visible-sm{
     margin-top: 25px;
+    height: 180px;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
@@ -99,10 +100,10 @@ html, body{
   -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   opacity: 0;
-  max-width: 300px;
+  max-width: 262.5px;
   width: 100%;
   height:100%;
-  margin-left: 3.2em;
+  margin-left: 1.1em;
   padding-top: 10%;
   padding-left: 20px;
   padding-right: 20px;
@@ -124,7 +125,7 @@ html, body{
     color: #e60000;
     text-align: center;
     font-family: 'adamcg', sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     text-transform: uppercase;
     opacity: 0;
     transition-delay: 0.1s;
@@ -225,7 +226,7 @@ footer{
 
 #socialfooter li{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 4px;
 }
 
 #socialfooter a {
@@ -321,13 +322,13 @@ p{
     line-height: 1.75em;
 }
 
-.projtitle{
+.projtitle {
     font-family: 'adamcg', sans-serif;
     font-size: 1.3em;
     color: #e60000;
 }
 
-.projtext{
+.projtext {
     font-family: 'Oxygen', sans-serif;
     font-size: 1.2em;
 }
@@ -338,6 +339,8 @@ footer p{
     text-align: center;
 }
 
+
+
 /* Media Queries */
 
 
@@ -347,12 +350,22 @@ footer p{
     }
 
     .workrows .hoverwork {
-        margin-left: 1em;
+        margin-left: 1.1em;
+        max-width: 212.5px;
+    }
+
+    .workrows .title {
+        font-size: 1.5em;
+    }
+
+    .workrows .tagline {
+        font-size: 1.1em;
     }
 
     .bannercaption{
         margin-top: 275px;
     }
+
 
 }
 
@@ -371,7 +384,6 @@ footer p{
     }
 
     .workrows{
-        width: calc(100% / 3);
         margin-bottom: 25px;
     }
 
@@ -438,23 +450,18 @@ footer p{
         line-height: 1.75em;
     }
 
-    .workrows{
-        width: calc(100% / 2);
-        margin-bottom: 25px;
-        float: none;
-    }
-
     .workrows:hover .hoverwork { opacity: 0; }
 
     .headerabout{
-        margin-top: 75px;
+        margin-top: 55px;
     }
 
 }
 
-@media only screen and (max-width: 345px){
+@media only screen and (max-width: 480px){
 .workrows{
         width: calc(100% / 1.5);
+        float: none;
     }
 }
 

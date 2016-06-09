@@ -18,27 +18,34 @@ var works = [
 	title: "Ruby on Rails Web App",
 	text: "Bootstrap, Ruby on Rails, Devise mailing, CanCanCan user management, Heroku",
 	link: "http://testbikeberlin.herokuapp.com"
+},
+{
+	pic: "http://dummyimage.com/300x300/ffffff/000000&text=Blog+CMS",
+	title: "Under Development",
+	text: "Ruby on Rails, Responsive, Authentication, Heroku",
+	link: "https://github.com/Kotoriii/blogcms"
 }
 ];
 
 for (var i = 0; i < works.length; i++){
-	$("#work").append("\n<div class='col-xs-6 col-md-4 workrows'>\n" +
-		"<a href='" + works[i].link +"'>\n" +
+	$(".controw").append("\n<div class='col-xs-6 col-md-3 workrows'>\n" +
+		"<a target='_blank' href='" + works[i].link +"'>\n" +
 		"<img class='img-responsive center-block work-img' src='" + works[i].pic + "'>\n" +
 		"<div class='hoverwork'><div class='title overtext'>" + works[i].title + "</div>\n" +
 		"<div class='tagline overtext'>" + works[i].text + "</div>\n" +
 		"</div>" +
 		"</a><div class='visible-xs visible-sm'>\n" +
 		"<div class='projtitle'><span>" + works[i].title + "</span></div><br>" + "<span class='projtext'>" + works[i].text + "</span></div>\n" + 
-		"</div>\n" +
+		"</div></div>\n" +
 		"");
 }
 
+/*
 var size;
 
 function checkwidth(){
-if ($(window).width() <= 760) {size = 1;}
-else {size = 3;}
+if ($(window).width() <= 760) {size = 2;}
+else {size = 4;}
 }
 
 checkwidth();
@@ -50,7 +57,7 @@ checkwidth();
 var cols = $('.workrows');
 	for(var i = 0, l = cols.length; i < l; i += size) {
     cols.slice(i, i+size).wrapAll('<div class="row"></div>');
-}
+} */
 
 $(document).ready(function(){
 	var $root = $('html, body');
@@ -65,3 +72,10 @@ $(document).ready(function(){
     });
 
  });   
+
+//https://jsfiddle.net/fvmaeqfc/3
+
+//http://holdirbootstrap.de/examples/theme/
+
+//Accordion w/o Bootstrap
+/* http://cssdeck.com/labs/accordion-without-javascript */
