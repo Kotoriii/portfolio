@@ -3,7 +3,7 @@
 var works = [
 {
 	pic: "img/macklogo.jpg",
-	link: "http://www.guillermomack.com",
+	link: "http://www.guillermo-mack.com",
 	title: "Guillermo Mack",
 	text: "Architect portfolio. Non-responsive design, CSS-Zoom, Owl-Carousel, Lightbox, PHP Contact form"
 },
