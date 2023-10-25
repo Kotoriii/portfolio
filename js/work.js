@@ -1,17 +1,4 @@
 
-for (var i = 0; i < works.length; i++){
-	$(".controw").append("\n<div class='col-xs-6 col-md-3 workrows'>\n" +
-		"<a target='_blank' href='" + works[i].link +"'>\n" +
-		"<img class='img-responsive center-block work-img' src='" + works[i].pic + "'>\n" +
-		"<div class='hoverwork'><div class='title overtext'>" + works[i].title + "</div>\n" +
-		"<div class='tagline overtext'>" + works[i].text + "</div>\n" +
-		"</div>" +
-		"</a><div class='visible-xs visible-sm'>\n" +
-		"<div class='projtitle'><span>" + works[i].title + "</span></div><br>" + "<span class='projtext'>" + works[i].text + "</span></div>\n" + 
-		"</div></div>\n" +
-		"");
-}
-
 var companies = [
 {
 	pic: "img/companies/comgy.png",
@@ -38,25 +25,6 @@ for (var i = 0; i < companies.length; i++){
 		"</a></div>\n" +
 		"");
 }
-
-/*
-var size;
-
-function checkwidth(){
-if ($(window).width() <= 760) {size = 2;}
-else {size = 4;}
-}
-
-checkwidth();
-
-$(window).resize(function(){
-checkwidth();
-});	
-
-var cols = $('.workrows');
-	for(var i = 0, l = cols.length; i < l; i += size) {
-    cols.slice(i, i+size).wrapAll('<div class="row"></div>');
-} */
 
 $(document).ready(function(){
 	var $root = $('html, body');
