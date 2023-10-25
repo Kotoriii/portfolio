@@ -1,32 +1,4 @@
 
-
-var works = [
-{
-	pic: "img/macklogo.jpg",
-	link: "http://www.guillermo-mack.com",
-	title: "Guillermo Mack",
-	text: "Architect portfolio. Non-responsive design, CSS-Zoom, Owl-Carousel, Lightbox, PHP Contact form"
-},
-{
-	pic: "img/picommerce.jpg",
-	title: "E-Commerce Template",
-	text: "Bootstrap, ASP/C#, Content Management System, Online Shop, MSSQL",
-	link: "http://picommerce.gear.host"
-},
-{
-	pic: "img/bikeberlin.jpg",
-	title: "Ruby on Rails Web App",
-	text: "Bootstrap, Ruby on Rails, Devise mailing, CanCanCan user management, Heroku",
-	link: "http://testbikeberlin.herokuapp.com"
-},
-{
-	pic: "http://dummyimage.com/300x300/ffffff/000000&text=Blog+CMS",
-	title: "Under Development",
-	text: "Ruby on Rails, Responsive, Authentication, Heroku",
-	link: "https://github.com/Kotoriii/blogcms"
-}
-];
-
 for (var i = 0; i < works.length; i++){
 	$(".controw").append("\n<div class='col-xs-6 col-md-3 workrows'>\n" +
 		"<a target='_blank' href='" + works[i].link +"'>\n" +
